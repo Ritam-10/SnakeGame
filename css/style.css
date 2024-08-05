@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../background-image.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 190px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: "Edu AU VIC WA NT Hand";
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: "Edu AU VIC WA NT Hand";
+}
+
+#board{
+    background: linear-gradient(rgb(147, 189, 147),rgb(229, 229, 95));
+    width: 92vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.snakeHead{
+    background-color: rgb(27, 110, 211);
+    border-radius: 40%;
+    border: 2px solid rgba(121, 22, 121, 0.416);
+}
+.snakeBody{
+    background-color: rgb(190, 65, 190);
+    border-radius:45% ;
+    border: 2px solid rgba(35, 16, 35, 0.416);
+}
+
+.food{
+    background-color: rgba(253, 107, 16, 0.815);
+    border-radius:45% ;
+    transform: scale(1);
+    border: 2px solid rgba(110, 64, 5, 0.619);
+}
